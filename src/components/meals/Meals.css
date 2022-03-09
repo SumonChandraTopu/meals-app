@@ -1,0 +1,48 @@
+.card-item {
+  /* background-color: aqua; */
+  padding: 1rem;
+  transition: .5s;
+}
+.card-item:hover{
+    box-shadow: 4px -2px 66px -21px rgba(0,0,0,0.51);
+-webkit-box-shadow: 4px -2px 66px -21px rgba(0,0,0,0.51);
+-moz-box-shadow: 4px -2px 66px -21px rgba(0,0,0,0.51);
+background-color: #323232;
+}
+
+
+.input-field{
+    background-color: #c7c7c7;
+    border: none;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+}
+.input-field:focus{
+    border: none;
+    color: #000000;
+    
+}
+.card-item a{
+    width: 100%;
+    transition: .5s;
+    display: block;
+    padding: .5em ;
+    font-size: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.card-item a:hover{
+    background-color: #000;
+}
+
+.head{
+    padding: 1rem 4rem;
+    background-color: #323232;
+}
+.meal-details h2{
+    font-size: 4em;
+    color: tomato;
+}
+
+
