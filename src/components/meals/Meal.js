@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Meals.css"
 
 const Meal = ({ meal }) => {
@@ -7,9 +7,6 @@ const Meal = ({ meal }) => {
   const {
     strMeal,
     idMeal,
-    strCategory,
-    strTags,
-    strInstructions,
     strMealThumb,
   } = meal;
  

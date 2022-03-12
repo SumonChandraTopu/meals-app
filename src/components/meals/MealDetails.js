@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./Meals.css";
 
 const MealDetails = () => {
@@ -51,6 +51,9 @@ const MealDetails = () => {
                 className="w-50"
                 frameborder="0"
               ></iframe>
+              <Link to="/" className="btn btn-lg bg-dark">
+                Back to home
+              </Link>
             </div>
           </div>
         </div>

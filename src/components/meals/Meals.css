@@ -46,3 +46,22 @@ background-color: #323232;
 }
 
 
+/* =============================  Namemeals File CSS  =================== */
+
+.nav-link{
+    color: #fff !important;
+    padding: 0 .5em !important;
+    margin: 0 .3em !important;
+    border-radius: 5px;
+    background: none;
+}
+.nav-link:hover{
+    background-color: #4e4e4e !important;
+}
+
+
+.name-meal-head h3{
+    text-align: left;
+    padding: .3em 0;
+    border-top: 3px solid #4e4e4e;
+}

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Meal from "../meals/Meal";
 import mealsData from "../../MEALS.json";
 import "./Meals.css";
+import NameMeals from "../nameMeal/NameMeals";
 const Meals = () => {
   const [searchResult, setSearchResult] = useState("");
 
@@ -26,6 +27,7 @@ const Meals = () => {
         {/*
       =================== Head Area End ================
       */}
+      <NameMeals />
       {/*
       =================== Meals Section Start ================
       */}
