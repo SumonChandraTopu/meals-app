@@ -9,7 +9,7 @@ const NameMeal = ({ nameMeal }) => {
     <>
       <div className="col-lg-3 col-sm-12 col-md-6 rounded card-item">
         <img className="w-100" src={strMealThumb} alt="" />
-        <h2>{strMeal}</h2>
+        <h2 className="fs-5 py-2">{strMeal}</h2>
 
         <Link to={url}>Details</Link>
       </div>

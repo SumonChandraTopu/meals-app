@@ -40,9 +40,10 @@ background-color: #323232;
     padding: 1rem 4rem;
     background-color: #323232;
 }
-.meal-details h2{
-    font-size: 4em;
+.meal-details h4{
+    font-size: 2em;
     color: tomato;
+    padding: .3em 0;
 }
 
 
@@ -59,7 +60,9 @@ background-color: #323232;
     background-color: #4e4e4e !important;
 }
 
-
+.name-meal-head{
+    padding: 0 !important;
+}
 .name-meal-head h3{
     text-align: left;
     padding: .3em 0;

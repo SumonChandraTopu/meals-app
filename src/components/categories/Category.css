@@ -1,0 +1,31 @@
+
+
+
+
+.category-head h2{
+    padding: .5em 0;
+    font-size: 3rem;
+}
+.card-item small{
+    background-color: #323232;
+    padding: .3em .6em;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.card-item button{
+    background-color: #323232;
+
+    width: 100%;
+    transition: .5s;
+    display: block;
+    margin: .5em 0;
+    font-size: 1em;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.4rem;
+    border: none;
+}
+.card-item button:hover{
+    background-color: #000;
+}

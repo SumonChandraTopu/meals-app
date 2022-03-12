@@ -13,14 +13,17 @@ const NameMeals = () => {
     fetch(apiByName)
       .then((res) => res.json())
       .then((data) => setMealByName(data.meals));
-    navigate("/meal/firstName");
+
+    if (mealByName.length === 0) {
+      return navigate("/meal/firstName");
+    } else if (!mealByName.length === 0) {
+      return navigate("/meal/firstName");
+    }
   };
   return (
-    <div className="pt-3 container">
-      <div className="header">
-        <h1>Welcome to Meals App</h1>
-      </div>
-      <div className="name-meal-head container">
+    <div className="container">
+     
+      <div className="name-meal-head ">
         <h3>Search By First Name</h3>
       </div>
       <ul className="nav justify-content-center">
@@ -158,11 +161,9 @@ const NameMeals = () => {
         </li>
       </ul>
       <div className="row gap-auto mt-5">
-        {! mealByName.length === 0 && (
-          mealByName.map((nameMeal) => (
-            <NameMeal nameMeal={nameMeal} key={nameMeal.idMeal} />
-          ))
-        )}
+        {mealByName.map((nameMeal) => (
+          <NameMeal nameMeal={nameMeal} key={nameMeal.idMeal} />
+        ))}
       </div>
     </div>
   );

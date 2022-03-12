@@ -6,8 +6,6 @@ import NameMeals from "../nameMeal/NameMeals";
 const Meals = () => {
   const [searchResult, setSearchResult] = useState("");
 
-  
-
   return (
     <div>
       {/*
@@ -27,12 +25,15 @@ const Meals = () => {
         {/*
       =================== Head Area End ================
       */}
-      <NameMeals />
-      {/*
+        <NameMeals />
+        {/*
       =================== Meals Section Start ================
       */}
         <div className="container">
           <div className="row gap-auto mt-5">
+            <div className="name-meal-head">
+              <h3>Latest Meals</h3>
+            </div>
             {mealsData
               .filter((meals) => {
                 if (meals === "") {

@@ -11,7 +11,6 @@ const MealDetails = () => {
     strArea,
     strInstructions,
     strMealThumb,
-    strYoutube,
   } = meal;
   const { mealId } = useParams();
   const urlById = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
@@ -36,7 +35,7 @@ const MealDetails = () => {
               <img className="w-100" src={strMealThumb} alt="meal img" />
             </div>
             <div className="meal-details w-50 text-start p-2">
-              <h2 className="m-0">{strMeal}</h2>
+              <h4 className="m-0">{strMeal}</h4>
               <small>
                 <span className="fs-6 bg-secondary px-2 py-0 rounded-pill">
                   {strCategory}
@@ -46,12 +45,7 @@ const MealDetails = () => {
               <p>
                 <span className="fw-bold">Details :-</span> {strInstructions}
               </p>
-              <iframe
-                src={strYoutube}
-                className="w-50"
-                frameborder="0"
-              ></iframe>
-              <Link to="/" className="btn btn-lg bg-dark">
+              <Link to="/" className="btn btn-lg bg-dark btn-dark">
                 Back to home
               </Link>
             </div>
